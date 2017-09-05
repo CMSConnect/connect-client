@@ -69,6 +69,7 @@ install_paramiko () {
 				--log="${builddir}/log" \
 				-b "${builddir}" \
 				--target="$target" \
+				--force-reinstall
 				paramiko \
 		) > pip.log 2>&1 ||
 		{ code=$?; echo "== Do you need to load a python module?"; }
